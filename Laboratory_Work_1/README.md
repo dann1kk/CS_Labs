@@ -1,0 +1,31 @@
+# Cryptography & Security Laboratory Work 1 
+
+### University: _Technical University of Moldova_
+### Faculty: _Computers, Informatics and Microelectronics_
+### Department: _Software Engineering and Automatics_
+### Author: _Daniel Pogorevici_
+
+----
+
+## Theory
+&ensp;&ensp;&ensp; Cryptography is closely related to the disciplines of cryptology and cryptanalysis. It includes techniques such as microdots, merging words with images and other ways to hide information in storage or transit. 
+
+&ensp;&ensp;&ensp; However, in today's computer-centric world, cryptography is most often associated with scrambling plaintext (ordinary text, sometimes referred to as cleartext) into ciphertext (a process called encryption), then back again (known as decryption). Individuals who practice this field are known as cryptographers.
+
+## Objectives 
+1. Get familiar with the basics of cryptography and classical ciphers.
+
+2. Implement 4 types of the classical ciphers:
+    - Caesar cipher with one key used for substitution,
+    - Caesar cipher with one key used for permutation of the alphabet,
+    - Vigenere cipher,
+    - Playfair cipher.
+
+3. Structure the project in methods/classes/packages as needed.
+
+## Implementations
+
+1. [Caesar Subsitution Cipher](https://github.com/dann1kk/CS_Labs/blob/main/Laboratory_Work_1/Caesar_Substitution.md)
+2. [Caesar Permutation Cipher](https://github.com/dann1kk/CS_Labs/blob/main/Laboratory_Work_1/Caesar_Permutation.md)
+3. [Vigenere Cipher](https://github.com/dann1kk/CS_Labs/blob/main/Laboratory_Work_1/Vigenere.md)
+4. [Playfair Cipher](https://github.com/dann1kk/CS_Labs/blob/main/Laboratory_Work_1/Playfair.md)

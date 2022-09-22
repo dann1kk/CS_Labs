@@ -1,6 +1,7 @@
 import string
 import itertools
 
+
 def chunker(seq, size):
     it = iter(seq)
     while True:
@@ -32,6 +33,7 @@ def prepare_input(initial_message):
 
     return final_message
 
+
 def generate_table(key):
     alphabet = "ABCDEFGHIKLMNOPQRSTUVWXYZ"
     table = []
@@ -46,6 +48,7 @@ def generate_table(key):
             table.append(char)
 
     return table
+
 
 def encrypt(message, key):
     table = generate_table(key)
@@ -95,7 +98,8 @@ def decrypt(cipher, key):
             decrypted += table[row2*5+col1]
 
     return decrypted
-    
+
+
 def main():
     message = input('Enter text to be encrypted: ')
     key = input('Enter your key: ')
