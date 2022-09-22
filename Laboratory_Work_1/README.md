@@ -25,7 +25,7 @@
 
 ## Implementations
 
-1. [Caesar Subsitution Cipher](https://github.com/dann1kk/CS_Labs/blob/main/Laboratory_Work_1/Caesar_Substitution.md)
-2. [Caesar Permutation Cipher](https://github.com/dann1kk/CS_Labs/blob/main/Laboratory_Work_1/Caesar_Permutation.md)
-3. [Vigenere Cipher](https://github.com/dann1kk/CS_Labs/blob/main/Laboratory_Work_1/Vigenere.md)
-4. [Playfair Cipher](https://github.com/dann1kk/CS_Labs/blob/main/Laboratory_Work_1/Playfair.md)
+1. [Caesar Subsitution Cipher](https://github.com/dann1kk/CS_Labs/blob/main/Laboratory_Work_1/Caesar%20Substitution/Caesar_Substitution.md)
+2. [Caesar Permutation Cipher](https://github.com/dann1kk/CS_Labs/blob/main/Laboratory_Work_1/Caesar%20Permutation/Caesar_Permutation.md)
+3. [Vigenere Cipher](https://github.com/dann1kk/CS_Labs/blob/main/Laboratory_Work_1/Vigenere/Vigenere.md)
+4. [Playfair Cipher](https://github.com/dann1kk/CS_Labs/blob/main/Laboratory_Work_1/Playfair/Playfair.md)
