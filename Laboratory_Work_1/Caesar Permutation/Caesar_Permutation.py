@@ -44,8 +44,9 @@ def main():
     # add remaining alphabet letters
     for i in all_alphabet_letters:
         if i not in alphabet:
-            alphabet.append(i)  
-    alphabet.append(whitespace)
+            alphabet.append(i) 
+    if whitespace not in alphabet: 
+        alphabet.append(whitespace)
     # print new created alphabet
     print('Your new alphabet:')
     print(alphabet)
