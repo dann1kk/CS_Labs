@@ -35,6 +35,7 @@ def main():
     key = input('Enter your key: ').lower()
     # create new alphabet 
     alphabet = []
+    whitespace = ' '
     all_alphabet_letters = string.ascii_lowercase
     # add all unique characters from message
     for character in key:
@@ -44,6 +45,7 @@ def main():
     for i in all_alphabet_letters:
         if i not in alphabet:
             alphabet.append(i)  
+    alphabet.append(whitespace)
     # print new created alphabet
     print('Your new alphabet:')
     print(alphabet)
