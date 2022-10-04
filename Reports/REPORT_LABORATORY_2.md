@@ -27,5 +27,5 @@
 
 ## Implementations
 
-1. [Block Cipher](https://github.com/dann1kk/CS_Labs/blob/main/Reports/block.md)
-2. [Stream Cipher](https://github.com/dann1kk/CS_Labs/blob/main/Reports/stream.md)
+1. [Block Cipher](https://github.com/dann1kk/CS_Labs/blob/main/Reports/Block.md)
+2. [Stream Cipher](https://github.com/dann1kk/CS_Labs/blob/main/Reports/Stream.md)
