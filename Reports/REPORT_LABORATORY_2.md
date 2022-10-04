@@ -27,5 +27,5 @@
 
 ## Implementations
 
-1. [Block Cipher - Blowfish](https://github.com/dann1kk/CS_Labs/blob/main/Laboratory_Work_1/Caesar%20Substitution/Caesar_Substitution.md)
-2. [Caesar Permutation Cipher](https://github.com/dann1kk/CS_Labs/blob/main/Laboratory_Work_1/Caesar%20Permutation/Caesar_Permutation.md)
+1. [Block Cipher](https://github.com/dann1kk/CS_Labs/blob/main/Reports/block.md)
+2. [Stream Cipher](https://github.com/dann1kk/CS_Labs/blob/main/Reports/stream.md)

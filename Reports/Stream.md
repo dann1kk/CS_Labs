@@ -80,3 +80,4 @@ def encrypt(text, key):
 ```
 
 ## Screenshots
+![](https://github.com/dann1kk/CS_Labs/blob/main/Resources/stream.png)

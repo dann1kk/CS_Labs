@@ -139,3 +139,4 @@ def decrypt (self, data):
 ```
 
 ## Screenshots
+![](https://github.com/dann1kk/CS_Labs/blob/main/Resources/block.png)

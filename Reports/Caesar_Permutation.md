@@ -67,4 +67,4 @@ def decrypt(cipher, shift, letter_to_index, index_to_letter):
 ```
 
 ## Screenshots
-![](https://github.com/dann1kk/CS_Labs/blob/main/Laboratory_Work_1/Screenshots/Caesar_Permutation.png)
+![](https://github.com/dann1kk/CS_Labs/blob/main/Resources/Caesar_Permutation.png)
