@@ -417,7 +417,7 @@ def main():
     decrypted = decrypted_bytes.decode()
 
     print("Your message: " + message)
-    print("\tEncrypted: %s" %(encrypted))
+    print("\tEncrypted: " + encrypted)
     print("\tDecrypted: " + decrypted)
     
 
