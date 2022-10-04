@@ -126,4 +126,4 @@ def decrypt(cipher, key):
 ```
 
 ## Screenshots
-![](https://github.com/dann1kk/CS_Labs/blob/main/Laboratory_Work_1/Screenshots/Playfair.png)
+![](https://github.com/dann1kk/CS_Labs/blob/main/Resources/Playfair.png)

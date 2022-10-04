@@ -1,4 +1,4 @@
-# Cryptography & Security Laboratory Works
+# Cryptography & Security Laboratory Work 2
 
 ### University: _Technical University of Moldova_
 ### Faculty: _Computers, Informatics and Microelectronics_
@@ -12,8 +12,20 @@
 
 &ensp;&ensp;&ensp; However, in today's computer-centric world, cryptography is most often associated with scrambling plaintext (ordinary text, sometimes referred to as cleartext) into ciphertext (a process called encryption), then back again (known as decryption). Individuals who practice this field are known as cryptographers.
 
+## Objectives 
+1. Get familiar with the symmetric cryptography, stream and block ciphers.
+
+2. Implement an example of a stream cipher.
+
+3. Implement an example of a block cipher.
+
+4. The implementation should, ideally follow the abstraction/contract/interface used in the previous laboratory work.
+
+5. Please use packages/directories to logically split the files that you will have.
+
+6. As in the previous task, please use a client class or test classes to showcase the execution of your programs.
+
 ## Implementations
 
-1. [Laboratory Work 1](https://github.com/dann1kk/CS_Labs/blob/main/Reports/REPORT_LABORATORY_1.md)
-2. [Laboratory Work 2](https://github.com/dann1kk/CS_Labs/blob/main/Reports/REPORT_LABORATORY_2.md)
-
+1. [Block Cipher](https://github.com/dann1kk/CS_Labs/blob/main/Reports/block.md)
+2. [Stream Cipher](https://github.com/dann1kk/CS_Labs/blob/main/Reports/stream.md)

@@ -60,4 +60,4 @@ def decrypt(cipher, key, alphabet, letter_to_index, index_to_letter):
 ```
 
 ## Screenshots 
-![](https://github.com/dann1kk/CS_Labs/blob/main/Laboratory_Work_1/Screenshots/Vigenere.png)
+![](https://github.com/dann1kk/CS_Labs/blob/main/Resources/Vigenere.png)
