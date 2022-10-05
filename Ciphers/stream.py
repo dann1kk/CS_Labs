@@ -64,19 +64,19 @@ def decrypt(text, key):
 
 
 
-def main():
-    message = input("Enter a message: ")
-    newKey = randomKey()
-    print("Your new key is: ", newKey)
+# def main():
+#     message = input("Enter a message: ")
+#     newKey = randomKey()
+#     print("Your new key is: ", newKey)
 
-    for i in range(2):
-        encryption = encrypt(message, newKey)
-        res = encrypt(encryption, newKey)
-    print("Encrypted message is: " + res)
+#     for i in range(2):
+#         encryption = encrypt(message, newKey)
+#         res = encrypt(encryption, newKey)
+#     print("Encrypted message is: " + res)
 
-    for i in range(2):
-        decryption = decrypt(res, newKey)
-        res2 = decrypt(decryption, newKey)
-    print("Decrypted message is:" + res2)
+#     for i in range(2):
+#         decryption = decrypt(res, newKey)
+#         res2 = decrypt(decryption, newKey)
+#     print("Decrypted message is:" + res2)
 
-main()
+# main()

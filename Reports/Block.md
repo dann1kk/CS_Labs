@@ -12,6 +12,8 @@ permutation and substitution boxes using a given key. Encrypt will scramble a gi
 unscramble the given encrypted string. __round_func is used as the round robin XOR on integers pertaining to the boxes.
 Cipher is used to initialize the key made from the original key used for scrambling and unscrambling the message given.
 
+*accepts only 8 byte blocks, but you can introduce two at the same time if you wish 
+
 ### Initial Steps:
 &ensp;&ensp;&ensp; As for start can be considered the __init__, __round_func and cipher functions. 
 __init__ being basically used to create an instance of blowfish and use key as encryption key. 

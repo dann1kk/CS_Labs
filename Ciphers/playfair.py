@@ -98,20 +98,3 @@ def decrypt(cipher, key):
             decrypted += table[row2*5+col1]
 
     return decrypted
-
-
-def main():
-    message = input('Enter text to be encrypted: ')
-    key = input('Enter your key: ')
-
-    cipher = encrypt(message, key)
-    decrypted = decrypt(cipher, key)
-    
-    print("Your message: " + message)
-
-    print("Encrypted message: " + cipher)
-
-    print("Decrypted message: " + decrypted)
-
-
-main()
