@@ -405,20 +405,3 @@ class blowfish:
     # call for max key length in bits
     def key_bits (self):
         return 56 * 8
-
-
-def main():
-    message = input('Enter text to be encrypted: ')
-    key = input('Enter your key:')
-    b_ciph = blowfish(key)
-
-    encrypted = b_ciph.encrypt (message)
-    decrypted_bytes = b_ciph.decrypt (encrypted)
-    decrypted = decrypted_bytes.decode()
-
-    print("Your message: " + message)
-    print("\tEncrypted: " + encrypted)
-    print("\tDecrypted: " + decrypted)
-    
-
-main()
