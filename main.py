@@ -4,6 +4,7 @@ from Ciphers import caesar_substitution
 from Ciphers import caesar_permutation
 from Ciphers import playfair
 from Ciphers import block
+from Ciphers import rsa
 
 def main():
     
@@ -60,6 +61,16 @@ def main():
     print("Your message: " + message_block)
     print("\tEncrypted: " + encrypted)
     print("\tDecrypted: " + decrypted)
+
+    print("RSA CIPHER")
+    public, private = rsa.generate_key_pair(rsa.p, rsa.q)
+    print("Public key: ", public)
+    print("Private key: ", private)
+    encrypted = rsa.encrypt(public, message)
+    decrypted = rsa.decrypt(private, encrypted)
+    print("Your message: " + message)
+    print("Encrypted: ", ''.join(map(lambda x: str(x) + " ", encrypted)))
+    print("Decrypted: ", decrypted)
 
 
 main()

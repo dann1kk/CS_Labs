@@ -5,6 +5,7 @@ from Ciphers import caesar_substitution
 from Ciphers import caesar_permutation
 from Ciphers import playfair
 from Ciphers import block
+from Ciphers import rsa 
 
 def main():
     
@@ -124,14 +125,35 @@ def main():
     encrypted3 = b_ciph.encrypt (message3_block)
     decrypted_bytes3 = b_ciph.decrypt (encrypted3)
     decrypted3 = decrypted_bytes3.decode()
-    print("Your message: " + message1_block)
-    print("\tEncrypted: " + encrypted1)
-    print("\tDecrypted: " + decrypted1)
+    print("\nYour message: " + message1_block)
+    print("Encrypted: " + encrypted1)
+    print("Decrypted: " + decrypted1)
     print("\nYour message: " + message2_block)
-    print("\tEncrypted: " + encrypted2)
-    print("\tDecrypted: " + decrypted2)
+    print("Encrypted: " + encrypted2)
+    print("Decrypted: " + decrypted2)
     print("\nYour message: " + message3_block)
-    print("\tEncrypted: " + encrypted3)
-    print("\tDecrypted: " + decrypted3)
+    print("Encrypted: " + encrypted3)
+    print("Decrypted: " + decrypted3)
+
+    print("\nRSA CIPHER")
+    public, private = rsa.generate_key_pair(rsa.p, rsa.q)
+    print("Public key: ", public)
+    print("Private key: ", private)
+    encrypted1 = rsa.encrypt(public, message1)
+    decrypted1 = rsa.decrypt(private, encrypted1)
+    encrypted2 = rsa.encrypt(public, message2)
+    decrypted2 = rsa.decrypt(private, encrypted2)
+    encrypted3 = rsa.encrypt(public, message3)
+    decrypted3 = rsa.decrypt(private, encrypted3)
+    print("\nYour message: " + message1)
+    print("Encrypted: ", ''.join(map(lambda x: str(x) + " ", encrypted2)))
+    print("Decrypted: ", decrypted1)
+    print("\nYour message: " + message2)
+    print("Encrypted: ", ''.join(map(lambda x: str(x) + " ", encrypted2)))
+    print("Decrypted: ", decrypted2)
+    print("\nYour message: " + message3)
+    print("Encrypted: ", ''.join(map(lambda x: str(x) + " ", encrypted3)))
+    print("Decrypted: ", decrypted3)
+
 
 main()
