@@ -11,17 +11,8 @@
 4. perform encryption and decryption
 
 ### Initial Steps:
-&ensp;&ensp;&ensp; For the start is generation of two numbers and afterwards generation of the key pair which obeys the requirements.
+&ensp;&ensp;&ensp; For the start is generation of key pairs from generated prime numbers.
 ```
-p = int(random.randrange(1, 10000))
-q = int(random.randrange(1, 10000))
-# generate numbers until prime
-while not isprime(p):
-    p = int(random.randrange(1, 10000))
-while not isprime(q):
-    q = int(random.randrange(1, 10000))
-
-# generate key pair with requirements
 def generate_key_pair(p, q):
     if not (isprime(p) and isprime(q)):
         raise ValueError('Must be prime numbers!')
@@ -37,7 +28,6 @@ def generate_key_pair(p, q):
     while g != 1:
         e = random.randrange(1, phi)
         g = gcd(e, phi)
-
     d = multiplicative_inverse(e, phi)
 
     return ((e, n), (d, n))
@@ -50,7 +40,6 @@ def multiplicative_inverse(e, phi):
     x2 = 1
     y1 = 1
     temp_phi = phi
-
     while e > 0:
         temp1 = temp_phi // e
         temp2 = temp_phi - temp1 * e
@@ -59,7 +48,6 @@ def multiplicative_inverse(e, phi):
 
         x = x2 - temp1 * x1
         y = d - temp1 * y1
-
         x2 = x1
         x1 = x
         d = y1
