@@ -1,5 +1,5 @@
 import random
-
+from Ciphers.cipher import Cipher
 from math import gcd
 from math import sqrt
 

@@ -1,3 +1,5 @@
+from Ciphers.cipher import Cipher
+
 alphabet = "abcdefghijklmnopqrstuvwxyz "
     # dictionary for mapping between alphabet letter and index, ex. a => 0, b => 1 ... 
 letter_to_index = dict(zip(alphabet, range(len(alphabet))))

@@ -1,3 +1,4 @@
+from Ciphers.cipher import Cipher
 #message = input('Enter text to be encrypted: ').lower()
 shift = 2
 alphabet = "abcdefghijklmnopqrstuvwxyz "
