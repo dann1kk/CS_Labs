@@ -5,7 +5,8 @@ from Ciphers import caesar_permutation
 from Ciphers import playfair
 from Ciphers import block
 from Ciphers import rsa
-
+from Ciphers import sha256
+import struct, codecs, hashlib
 def main():
     
     message = input("Enter text to be encrypted: ")
@@ -71,6 +72,20 @@ def main():
     print("Your message: " + message)
     print("Encrypted: ", ''.join(map(lambda x: str(x) + " ", encrypted)))
     print("Decrypted: ", decrypted)
+
+    print("SHA256 HASHING:")
+    byte_message = bytes(message, 'UTF-8')
+    print("Preprocess the message as a string to bytes: ", byte_message)
+    digest = codecs.encode(sha256.sha256_sum(byte_message), 'hex').decode()
+    print("Message digest: ", digest)
+    encrypted = rsa.encrypt(public, digest)
+    print("Encrypted message using RSA cipher:" , encrypted)
+    decrypted = rsa.decrypt(private, encrypted)
+    print("Decrypted message:", decrypted)
+    if (decrypted == digest):
+        print("Digital signature check successfully performed!")
+    else:
+        print("Error!")
 
 
 main()
