@@ -8,6 +8,7 @@ from Ciphers import block
 from Ciphers import rsa 
 from Ciphers import sha256
 import codecs
+db = []
 def main():
     
     message1 = "GOOD MORNING"
@@ -161,12 +162,16 @@ def main():
     byte_message1 = bytes(message1, 'UTF-8')
     print("Preprocess the message as a string to bytes: ", byte_message1)
     digest1 = codecs.encode(sha256.sha256_sum(byte_message1), 'hex').decode()
+    db.append(digest1)
     print("Message digest: ", digest1)
     encrypted1 = rsa.encrypt(public, digest1)
+    db.append(encrypted1)
     print("Encrypted message using RSA cipher:" , encrypted1)
-    decrypted1 = rsa.decrypt(private, encrypted1)
+    encrypted1_db = db[1]
+    decrypted1 = rsa.decrypt(private, encrypted1_db)
     print("Decrypted message:", decrypted1)
-    if (decrypted1 == digest1):
+    digest1_db = db[0]
+    if (decrypted1 == digest1_db):
         print("Digital signature check successfully performed!")
     else:
         print("Error!")
@@ -174,12 +179,16 @@ def main():
     byte_message2 = bytes(message2, 'UTF-8')
     print("Preprocess the message as a string to bytes: ", byte_message2)
     digest2 = codecs.encode(sha256.sha256_sum(byte_message2), 'hex').decode()
+    db.append(digest2)
     print("Message digest: ", digest2)
     encrypted2 = rsa.encrypt(public, digest2)
+    db.append(encrypted2)
     print("Encrypted message using RSA cipher:" , encrypted2)
-    decrypted2 = rsa.decrypt(private, encrypted2)
+    encrypted2_db = db[3]
+    decrypted2 = rsa.decrypt(private, encrypted2_db)
     print("Decrypted message:", decrypted2)
-    if (decrypted2 == digest2):
+    digest2_db = db[2]
+    if (decrypted2 == digest2_db):
         print("Digital signature check successfully performed!")
     else:
         print("Error!")

@@ -7,6 +7,8 @@ from Ciphers import block
 from Ciphers import rsa
 from Ciphers import sha256
 import struct, codecs, hashlib
+db = []
+
 def main():
     
     message = input("Enter text to be encrypted: ")
@@ -77,12 +79,16 @@ def main():
     byte_message = bytes(message, 'UTF-8')
     print("Preprocess the message as a string to bytes: ", byte_message)
     digest = codecs.encode(sha256.sha256_sum(byte_message), 'hex').decode()
+    db.append(digest)
     print("Message digest: ", digest)
     encrypted = rsa.encrypt(public, digest)
+    db.append(encrypted)
     print("Encrypted message using RSA cipher:" , encrypted)
-    decrypted = rsa.decrypt(private, encrypted)
+    encrypted_db = db[1]
+    decrypted = rsa.decrypt(private, encrypted_db)
+    digest_db = db[0]
     print("Decrypted message:", decrypted)
-    if (decrypted == digest):
+    if (decrypted == digest_db):
         print("Digital signature check successfully performed!")
     else:
         print("Error!")
