@@ -1,6 +1,5 @@
 import struct
 
-
 # perform a right rotation
 def ror(val, r_bits, max_bits):
     rb = r_bits % max_bits

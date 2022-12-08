@@ -1,5 +1,5 @@
 import string
-from Ciphers.cipher import Cipher
+
 shift = 1
 key = 'secret key'
 

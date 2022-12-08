@@ -1,8 +1,6 @@
 import random
-from Ciphers.cipher import Cipher
 from math import gcd
 from math import sqrt
-
 from sympy import isprime
 
 p = int(random.randrange(1, 10000))

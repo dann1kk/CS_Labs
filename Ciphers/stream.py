@@ -1,5 +1,5 @@
 import random
-from Ciphers.cipher import Cipher
+
 def randomKey(): #random key generator
     alphaCollection = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789,.'?!@#$%^&*()~" #ascii collection
     a = random.randint(1,9) #random multiplier

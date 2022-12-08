@@ -1,6 +1,5 @@
 import string
 import itertools
-from Ciphers.cipher import Cipher
 
 def chunker(seq, size):
     it = iter(seq)

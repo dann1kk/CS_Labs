@@ -1,4 +1,3 @@
-from Ciphers.cipher import Cipher
 
 class blowfish:
     # Cipher directions
