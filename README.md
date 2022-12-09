@@ -18,4 +18,4 @@
 2. [Laboratory Work 2](https://github.com/dann1kk/CS_Labs/blob/main/Reports/REPORT_LABORATORY_2.md)
 3. [Laboratory Work 3](https://github.com/dann1kk/CS_Labs/blob/main/Reports/REPORT_LABORATORY_3.md)
 4. [Laboratory Work 4](https://github.com/dann1kk/CS_Labs/blob/main/Reports/REPORT_LABORATORY_4.md)
-
+5. [Laboratory Work 5](https://github.com/dann1kk/CS_Labs/blob/main/Reports/REPORT_LABORATORY_5.md)
