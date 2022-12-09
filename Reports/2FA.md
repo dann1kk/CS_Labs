@@ -77,7 +77,7 @@ def login():
             return {'Access forbidden': 403}
         return {'Logged in successfully!': 200}
 ```
-&ensp;&ensp;&ensp; __Request and responde:__
+&ensp;&ensp;&ensp; __Request and response:__
 ```{json}
 {
     "email":"dan@gmail.com",
@@ -105,6 +105,20 @@ def playfaircipher():
             decrypted = playfair.decrypt(cipher, key)
             return {'Your encrypted message:': cipher,
                     'Your decrypted message:': decrypted}
+```
+&ensp;&ensp;&ensp; __Request and response:__
+```{json}
+{
+    "email":"dan@gmail.com",
+    "message": "mymessage"
+    "key": "secret"
+}
+```
+```{json}
+{
+    "Your decrypted message:": "MYMESXSAGE",
+    "Your encrypted message:": "LZITCVAHBT"
+}
 ```
 
 ## TOTP Authentication (2FA)
